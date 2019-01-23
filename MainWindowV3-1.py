@@ -7,6 +7,18 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from calibratie import CalibratieTrackers
+from PongGame import Pong_demo
+
+# global variables
+
+PLAYERS = 1
+THEME = 2
+SPEED = 15
+POINTS = 3
+TIME = 120
+
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -33,7 +45,7 @@ class Ui_MainWindow(object):
         self.LblTitle = QtWidgets.QLabel(self.StartPage)
         self.LblTitle.setGeometry(QtCore.QRect(650, 180, 591, 171))
         font = QtGui.QFont()
-        font.setPointSize(-1)
+        font.setPointSize(1)
         self.LblTitle.setFont(font)
         self.LblTitle.setStyleSheet("#LblTitle{\n"
 "color: #FFFFFF;\n"
@@ -47,7 +59,7 @@ class Ui_MainWindow(object):
         self.BtnStart.setGeometry(QtCore.QRect(550, 700, 821, 101))
         font = QtGui.QFont()
         font.setFamily("Bit9x9")
-        font.setPointSize(-1)
+        font.setPointSize(1)
         self.BtnStart.setFont(font)
         self.BtnStart.setStyleSheet("#BtnStart {\n"
 "color: #FFFFFF;\n"
@@ -67,7 +79,7 @@ class Ui_MainWindow(object):
         self.BtnCalibrate = QtWidgets.QPushButton(self.StartPage)
         self.BtnCalibrate.setGeometry(QtCore.QRect(1590, 940, 261, 32))
         font = QtGui.QFont()
-        font.setPointSize(-1)
+        font.setPointSize(1)
         self.BtnCalibrate.setFont(font)
         self.BtnCalibrate.setStyleSheet("#BtnCalibrate{\n"
 "color: #FFFFFF;\n"
@@ -89,7 +101,7 @@ class Ui_MainWindow(object):
         self.Btn2p.setGeometry(QtCore.QRect(510, 530, 291, 101))
         font = QtGui.QFont()
         font.setFamily("Bit9x9")
-        font.setPointSize(-1)
+        font.setPointSize(1)
         self.Btn2p.setFont(font)
         self.Btn2p.setStyleSheet("#Btn2p {\n"
 "color: #FFFFFF;\n"
@@ -108,6 +120,8 @@ class Ui_MainWindow(object):
 "}")
         self.Btn2p.setObjectName("Btn2p")
         self.BtnRetro = QtWidgets.QPushButton(self.SettingsPage)
+        self.BtnRetro.setIcon(QtGui.QIcon('assets/icons/ping-pong.png'))
+        self.BtnRetro.setIconSize(QtCore.QSize(114,101))
         self.BtnRetro.setGeometry(QtCore.QRect(1120, 530, 114, 101))
         self.BtnRetro.setStyleSheet("#BtnRetro {\n"
 "background-color: transparent;\n"
@@ -125,6 +139,8 @@ class Ui_MainWindow(object):
         self.BtnRetro.setText("")
         self.BtnRetro.setObjectName("BtnRetro")
         self.BtnFortNite = QtWidgets.QPushButton(self.SettingsPage)
+        self.BtnFortNite.setIcon(QtGui.QIcon('assets/icons/fortnite-logo.png'))
+        self.BtnFortNite.setIconSize(QtCore.QSize(114,101))
         self.BtnFortNite.setGeometry(QtCore.QRect(1400, 530, 114, 101))
         self.BtnFortNite.setStyleSheet("#BtnFortNite {\n"
 "background-color: transparent;\n"
@@ -142,6 +158,8 @@ class Ui_MainWindow(object):
         self.BtnFortNite.setText("")
         self.BtnFortNite.setObjectName("BtnFortNite")
         self.BtnCastle = QtWidgets.QPushButton(self.SettingsPage)
+        self.BtnCastle.setIcon(QtGui.QIcon('assets/icons/snowman.png'))
+        self.BtnCastle.setIconSize(QtCore.QSize(114,101))
         self.BtnCastle.setGeometry(QtCore.QRect(1680, 530, 114, 101))
         self.BtnCastle.setStyleSheet("#BtnCastle {\n"
 "background-color: transparent;\n"
@@ -152,7 +170,7 @@ class Ui_MainWindow(object):
 "}\n"
 "#BtnCastle:pressed\n"
 "{\n"
-"   border-image: url(:snowmanblack.png);\n"
+"   border-image: url(:assets/icons/snowmanblack.png);\n"
 "border: 1px solid white;\n"
 "background-color: #FFFFFF\n"
 "}")
@@ -225,7 +243,7 @@ class Ui_MainWindow(object):
         self.Btn1p_2.setGeometry(QtCore.QRect(130, 530, 291, 101))
         font = QtGui.QFont()
         font.setFamily("Bit9x9")
-        font.setPointSize(-1)
+        font.setPointSize(1)
         self.Btn1p_2.setFont(font)
         self.Btn1p_2.setStyleSheet("#Btn1p_2 {\n"
 "color: #FFFFFF;\n"
@@ -326,6 +344,8 @@ class Ui_MainWindow(object):
 "")
         self.LblPoints.setObjectName("LblPoints")
         self.TxtSpeed = QtWidgets.QTextEdit(self.AdvancedPage)
+        self.TxtSpeed.textChanged.connect(self.GetSpeed)
+
         self.TxtSpeed.setGeometry(QtCore.QRect(580, 780, 161, 74))
         self.TxtSpeed.setStyleSheet("border: 1px solid white;\n"
 "color: #FFFFFF;\n"
@@ -340,6 +360,8 @@ class Ui_MainWindow(object):
 "")
         self.LblSpeed.setObjectName("LblSpeed")
         self.TxtPoints = QtWidgets.QTextEdit(self.AdvancedPage)
+        self.TxtPoints.textChanged.connect(self.GetPoints)
+
         self.TxtPoints.setGeometry(QtCore.QRect(580, 390, 161, 74))
         self.TxtPoints.setStyleSheet("border: 1px solid white;\n"
 "color: #FFFFFF;\n"
@@ -362,6 +384,8 @@ class Ui_MainWindow(object):
 "font-family: \'Bit9x9\';")
         self.TxtYear.setObjectName("TxtYear")
         self.LblTime_2 = QtWidgets.QLabel(self.AdvancedPage)
+        self.TxtPoints.textChanged.connect(self.GetTime)
+
         self.LblTime_2.setGeometry(QtCore.QRect(760, 260, 171, 21))
         self.LblTime_2.setStyleSheet("color:#FFFFFF;\n"
 "font-size: 30px;\n"
@@ -374,6 +398,92 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+
+        #Connectie met buttons
+
+        self.BtnStart.clicked.connect(lambda *args: self.stackedWidget.setCurrentIndex(1))
+        self.BtnAdvanced.clicked.connect(lambda *args: self.stackedWidget.setCurrentIndex(2))
+        self.BtnSettings.clicked.connect(lambda *args: self.stackedWidget.setCurrentIndex(1))
+        self.BtnSettings_2.clicked.connect(lambda *args: self.stackedWidget.setCurrentIndex(1))
+
+        #CONNECTIE MET PLAYER BUTTONS
+
+        self.Btn1p_2.clicked.connect(self.ChangePlayers1)
+        self.Btn2p.clicked.connect(self.ChangePlayers2)
+
+        # connectie met thema buttons
+
+        self.BtnRetro.clicked.connect(self.ChangeTheme1)
+        self.BtnFortNite.clicked.connect(self.ChangeTheme2)
+        self.BtnCastle.clicked.connect(self.ChangeTheme3)
+
+        #Game connection
+
+        self.BtnStart_2.clicked.connect(self.OpenPongGame)
+
+        #Spelers aanpassen
+    def ChangePlayers1(self):
+        global PLAYERS
+        PLAYERS = 1
+        print(PLAYERS)
+
+    def ChangePlayers2(self):
+        global PLAYERS
+        PLAYERS = 2
+        print(PLAYERS)
+
+#Advanced Inputs
+    def GetSpeed(self):
+        global SPEED
+        try:
+                SPEED = int(self.TxtSpeed.toPlainText())
+        except ValueError:
+                print ("Invalid string found in: {}".format(SPEED))
+
+    def GetPoints(self):
+        global POINTS
+        try:
+                POINTS = int(self.TxtPoints.toPlainText())
+        except ValueError:
+                print ("Invalid string found in: {}".format(POINTS))
+
+    def GetTime(self):
+        global TIME
+        try:
+                TIME = int(self.TxtPoints.toPlainText())
+        except ValueError:
+                print ("Invalid string found in: {}".format(TIME))
+        print(TIME)
+
+    #playmode
+    def Playmode(self):
+        global PLAYMODE
+        if self.checkBox == self.checkBox.QCheckBox.checkstate(True):
+                PLAYMODE = "score"
+        elif self.checkBox_2 == self.checkBox_2.checkstate(True):
+            PLAYMODE = "time"
+        print(PLAYMODE)
+
+
+# Thema's aanpassen
+    def ChangeTheme1(self):
+            global THEME
+            THEME = 3
+            print(THEME)
+    def ChangeTheme2(self):
+            global THEME
+            THEME = 1
+            print(THEME)
+    def ChangeTheme3(self):
+            global THEME
+            THEME = 2
+            print( THEME)
+
+    def OpenPongGame(self, mainwindow):
+        print('Pong game is gestart')
+        Pong_demo(mode = "PLAYMODE", paddle_speed=SPEED // 2, theme=THEME, play_time=TIME, players=PLAYERS, ball_speed=SPEED, win_score=POINTS)
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -405,4 +515,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
