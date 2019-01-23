@@ -1,8 +1,6 @@
 from trackers.triad_openvr import *
 import time
 
-
-
 #iniate connected trackers
 v = triad_openvr()
 amount_connected = v.get_connected_trackers()
@@ -41,3 +39,4 @@ def get_all_positions():
     for i in range (1,amount_connected+1):
         list_measurements.append(get_position("tracker_"+str(i)))
     return list_measurements
+

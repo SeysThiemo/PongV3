@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f1866f1-1437-4c98-ad50-8c9835a4ac5a" name="Default Changelist" comment="" />
+    <list default="true" id="6f1866f1-1437-4c98-ad50-8c9835a4ac5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/img/crown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calibratie.json" beforeDir="false" afterPath="$PROJECT_DIR$/calibratie.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_fortnite.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_fortnite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trackers/tracker_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/trackers/tracker_manager.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,11 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/fortnite_demo$test_ran.coverage" NAME="test_ran Coverage Results" MODIFIED="1548164370246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fortnite_demo$calibratie.coverage" NAME="calibratie Coverage Results" MODIFIED="1548079167901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fortnite_demo$test_calibratie.coverage" NAME="test_calibratie Coverage Results" MODIFIED="1547737725557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fortnite_demo$test_pygame_sound.coverage" NAME="test_pygame_sound Coverage Results" MODIFIED="1548060515871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fortnite_demo$demo_fortnite.coverage" NAME="demo_fortnite Coverage Results" MODIFIED="1548150969476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fortnite_demo$tracker_manager.coverage" NAME="tracker_manager Coverage Results" MODIFIED="1548085452271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trackers" />
+    <SUITE FILE_PATH="coverage/fortnite_demo$demo_fortnite.coverage" NAME="demo_fortnite Coverage Results" MODIFIED="1548240393649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fortnite_demo$tracker_manager.coverage" NAME="tracker_manager Coverage Results" MODIFIED="1548168540939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trackers" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -43,26 +49,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="jpg" value="4" />
-          <entry key="json" value="3" />
-          <entry key="png" value="11" />
-          <entry key="py" value="11" />
+          <entry key="json" value="4" />
+          <entry key="png" value="18" />
+          <entry key="pstat" value="1" />
+          <entry key="py" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="15" />
-          <entry key="JSON" value="3" />
-          <entry key="Python" value="11" />
+          <entry key="Image" value="22" />
+          <entry key="JSON" value="4" />
+          <entry key="Profiler Session" value="1" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4441" />
+          <entry key="json" value="2" />
+          <entry key="py" value="6614" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4441" />
+          <entry key="JSON" value="2" />
+          <entry key="Python" value="6614" />
         </counts>
       </usages-collector>
     </session>
@@ -75,43 +85,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo_fortnite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="367" column="33" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
+            <state relative-caret-position="90">
+              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1548150969466" expanded="true" signature="4583:4588" ph="..." />
-                <marker date="1548150969466" expanded="true" signature="5902:5910" ph="..." />
+                <marker date="1548240393640" expanded="true" signature="4581:4586" ph="..." />
+                <marker date="1548240393640" expanded="true" signature="5932:5933" ph="..." />
+                <marker date="1548240393640" expanded="true" signature="10207:10215" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calibratie.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calibratie.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/assets/img/fortnite.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trackers/triad_openvr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="88" column="31" lean-forward="true" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+            <state relative-caret-position="-1882">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -122,20 +117,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trackers/tracker_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="-112">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/openvr/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91905">
-              <caret line="6132" column="7" selection-start-line="6132" selection-start-column="7" selection-end-line="6132" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -146,7 +132,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/img/magic-wand.png">
+        <entry file="file://$PROJECT_DIR$/assets/img/frozen.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -156,7 +142,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/img/fortnite.jpg">
+        <entry file="file://$PROJECT_DIR$/assets/img/crounching.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/grenade.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/img/happy.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -180,9 +176,17 @@
       <find>self.sound</find>
       <find>sys.ex</find>
       <find>self.sound_paddle</find>
-      <find>print</find>
       <find>ball</find>
+      <find>paddle</find>
+      <find>print</find>
+      <find>difficulty</find>
+      <find>score</find>
+      <find>paddle2</find>
+      <find>sys</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -190,6 +194,8 @@
         <option value="$PROJECT_DIR$/test_calibratie.py" />
         <option value="$PROJECT_DIR$/test_pygame_sound.py" />
         <option value="$PROJECT_DIR$/calibratie.py" />
+        <option value="$PROJECT_DIR$/calibratie.json" />
+        <option value="$PROJECT_DIR$/test_ran.py" />
         <option value="$PROJECT_DIR$/trackers/tracker_manager.py" />
         <option value="$PROJECT_DIR$/demo_fortnite.py" />
       </list>
@@ -201,12 +207,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="279" />
-    <option name="y" value="200" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="63" />
+    <option name="y" value="124" />
     <option name="width" value="1290" />
     <option name="height" value="655" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -326,28 +333,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_calibratie" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fortnite_demo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_calibratie.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_pygame_sound" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fortnite_demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -362,6 +347,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_pygame_sound.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_ran" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fortnite_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_ran.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -395,17 +402,17 @@
     <list>
       <item itemvalue="Python.demo_fortnite" />
       <item itemvalue="Python.calibratie" />
-      <item itemvalue="Python.test_calibratie" />
       <item itemvalue="Python.tracker_manager" />
       <item itemvalue="Python.test_pygame_sound" />
+      <item itemvalue="Python.test_ran" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.demo_fortnite" />
         <item itemvalue="Python.tracker_manager" />
+        <item itemvalue="Python.test_ran" />
         <item itemvalue="Python.calibratie" />
         <item itemvalue="Python.test_pygame_sound" />
-        <item itemvalue="Python.test_calibratie" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +430,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1600" height="870" extended-state="7" />
+    <frame x="0" y="30" width="1600" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919486" visible="true" weight="0.25933075" />
@@ -431,7 +438,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50080514" side_tool="true" weight="0.2840746" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22807017" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22837839" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,11 +449,12 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.26383525" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,40 +465,36 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_calibratie.py" />
-    <entry file="file://$PROJECT_DIR$/test_pygame_sound.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/Castle.jpg" />
     <entry file="file://$PROJECT_DIR$/assets/img/crown.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/Frozen.jpg" />
-    <entry file="file://$PROJECT_DIR$/assets/img/grenade.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/twig.png" />
-    <entry file="file://$PROJECT_DIR$/assets/img/frozen.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_fortnite.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/openvr/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="367" column="33" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1548150969466" expanded="true" signature="4583:4588" ph="..." />
-            <marker date="1548150969466" expanded="true" signature="5902:5910" ph="..." />
-          </folding>
+        <state relative-caret-position="91905">
+          <caret line="6132" column="7" selection-start-line="6132" selection-start-column="7" selection-end-line="6132" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calibratie.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_pygame_sound.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="26" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calibratie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="398">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -498,17 +502,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calibratie.json">
+    <entry file="file://$PROJECT_DIR$/test_ran.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/magic-wand.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/pebbleFrozen.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/crounching.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/happy.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/frozen.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/fortnite.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/grenade.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/plank.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/trackers/triad_openvr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="88" column="31" lean-forward="true" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+        <state relative-caret-position="-1882">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -517,32 +545,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trackers/tracker_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="-112">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/openvr/__init__.py">
+    <entry file="file://$PROJECT_DIR$/demo_fortnite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91905">
-          <caret line="6132" column="7" selection-start-line="6132" selection-start-column="7" selection-end-line="6132" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1548240393640" expanded="true" signature="4581:4586" ph="..." />
+            <marker date="1548240393640" expanded="true" signature="5932:5933" ph="..." />
+            <marker date="1548240393640" expanded="true" signature="10207:10215" ph="..." />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/plank.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/magic-wand.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/pebbleFrozen.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/fortnite.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
